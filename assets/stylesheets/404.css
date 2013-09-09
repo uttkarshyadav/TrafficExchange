@@ -1,0 +1,65 @@
+body
+{
+	background: #F2F2F2;
+	margin: 0;
+	padding: 200px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color :#000000;
+}
+
+.error_page 
+{
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+
+.error_left
+{
+	float: left;
+	width: 300px;
+}
+
+.error_right
+{
+	float: right;
+	width: 300px;
+}
+
+.error_page h1
+{
+	text-align: left;
+	margin: 0;
+	font-size: 150px;
+}
+
+.error_page h2
+{
+	text-align: left;
+	font-size: 30px;
+	color: #83AC44;
+	padding-right: 10px;
+}
+
+.error_page p 
+{
+	text-align: left;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+a
+{
+	color: #83AC44;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: #83AC44;
+	text-decoration:underline;
+}
