@@ -9,7 +9,22 @@ $result = '';
 // Table 'exchange_users'
 //
 //id username password email gender country newsletter activate points banned last_ips last_login
-$TABLE_USERS = "";
+$TABLE_USERS = "
+CREATE TABLE exchange_users (
+  id int(11) NOT NULL auto_increment,
+  username varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  email varchar(255) NOT NULL,
+  gender tinyint NOT NULL,
+  country varchar(255) NOT NULL,
+  newsletter varchar(255) NOT NULL,
+  activate tinyint NOT NULL,
+  points int(11) NOT NULL,
+  banned tinyint NOT NULL,
+  last_ips varchar(16) NOT NULL,
+  last_login datetime NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB";
 
 $query = $BDD->prepare($TABLE_USERS);
 if ($query->execute())
